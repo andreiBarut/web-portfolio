@@ -6,6 +6,7 @@
 
 body {
 	font-family: "Advent Pro", sans-serif;
+	background-color: #1b2430;
 }
 
 a {
@@ -293,19 +294,87 @@ section {
 /* ^ THIRD PAGE */
 
 .projects-page {
+	display: flex;
+	justify-content: center;
 	background-color: #1c1c1c;
 	height: auto !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .project-section {
-	display: flex;
-	flex-direction: column;
-	color: #ffffff;
 	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: auto;
+	width: auto;
 }
 
 .project-section button {
 	width: 100px;
 	height: 30px;
 	background-color: #f3c03d;
+}
+
+.project-ss {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	margin: 68px;
+	font-size: 1.2rem;
+}
+
+.about-app {
+	color: #fefefe;
+	margin: 1rem;
+	background-color: #1b2430;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-content: flex-end;
+	padding: 1rem;
+	border: 1px solid green;
+}
+
+.project-img {
+	border-radius: 10px;
+}
+
+.currency-app-img {
+	border: 1rem solid #1b2430;
+}
+
+.hangman-app-img {
+	border: 1rem solid #fefefe;
+}
+
+.react-app-img {
+	border: 1rem solid #f3c03d;
+}
+
+.project-button-container button {
+	height: 40px;
+	width: 150px;
+	border-radius: 10px;
+	border: 0;
+	font-size: 1.5rem;
+	font-family: "Advent Pro", sans-serif;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.project-button-container button:hover {
+	background-color: #816797;
+	color: #fefefe;
+	transition: 0.3s;
+}
+
+.footer-page {
+	height: auto;
+	text-align: center;
+	color: #fefefe;
+	padding: 2rem;
 }
