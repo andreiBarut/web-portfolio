@@ -2,13 +2,14 @@
 -first page
 -second page
 -third page
-
+!!DONE
 -remove borders
-
+!!DONE
 -put images for all apps
-
+!!DONE
 -make links work for everything
-
+!!DONE
 -create bookmarks that slide 
+!!DONE
 
 -make hamburger menu that occupies the whole page

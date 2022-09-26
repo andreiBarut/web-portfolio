@@ -24,23 +24,32 @@
 		<div class="about-page page">
 			<!--^ nav -->
 			<nav>
-				<button>ABOUT</button>
-				<button>SKILLS</button>
-				<button>PROJECTS</button>
+				<a href="#about-start">
+					<button>ABOUT</button>
+				</a>
+				<a href="#skills-start">
+					<button>SKILLS</button>
+				</a>
+				<a href="#projects-start">
+					<button>PROJECTS</button>
+				</a>
 			</nav>
 			<!--^ info section for first page-->
-			<section>
+			<section class="info-section">
 				<!--^ about me-->
-				<div class="about-container">
+				<div class="about-container" id="about-start">
 					<h3 class="heading">~ hi</h3>
 					<div>
-						<a href="#">
+						<a href="https://github.com/andreiBarut" target="_blank">
 							<i class="fa-brands fa-square-github"></i>
 						</a>
-						<a href="#">
+						<a
+							href="https://www.linkedin.com/in/andrei-emilian-b%C4%83ru%C8%9B-254387237/"
+							target="_blank"
+						>
 							<i class="fa-brands fa-linkedin"></i>
 						</a>
-						<a href="#">
+						<a href="https://www.facebook.com/andrei.emilian.3517" target="_blank">
 							<i class="fa-brands fa-square-facebook"></i>
 						</a>
 					</div>
@@ -58,7 +67,7 @@
 			</section>
 		</div>
 		<!-- ^SECOND PAGE - SKILLS PAGE -->
-		<div class="skills-page page">
+		<div class="skills-page page" id="skills-start">
 			<img src="img/plane.png" alt="#" class="moving-plane" />
 			<section class="skills-section">
 				<img src="img/obj.png" alt="#" class="obj-image" />
@@ -75,7 +84,7 @@
 			</section>
 
 			<section class="description-section">
-				<img src="img/open-tag.png" alt="#" />
+				<img src="img/open-tag.png" alt="#" class="open-tag-img" />
 
 				<p>
 					Started with studying German and English at university. Currently studying
@@ -86,16 +95,16 @@
 					comes bundled with that. As a side gig I give guitar lessons and do music
 					production.
 				</p>
-				<img src="img/close-tag.png" alt="#" />
+				<img src="img/close-tag.png" alt="#" class="close-tag-img" />
 			</section>
 		</div>
 
 		<!--^  THIRD PAGE - PROJECTS PAGE-->
-		<div class="projects-page page">
+		<div class="projects-page page" id="projects-start">
 			<section class="project-section">
 				<div class="project-ss">
 					<img
-						src="img/currency-app.png"
+						src="img/currency-exchange-app.png"
 						alt="#"
 						class="currency-app-img project-img"
 					/>
@@ -105,15 +114,19 @@
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, iusto?
 						</p>
 						<div class="project-button-container">
-							<button>GitHub</button>
-							<button>Demo</button>
+							<a href="https://github.com/andreiBarut/APIExchangeApp" target="_blank">
+								<button>GitHub</button>
+							</a>
+							<a href="https://andreibarut.github.io/APIExchangeApp/" target="_blank">
+								<button>Live Demo</button>
+							</a>
 						</div>
 					</article>
 				</div>
 
 				<div class="project-ss">
 					<img
-						src="img/currency-app.png"
+						src="img/hangman-with-cars.png"
 						alt="#"
 						class="hangman-app-img project-img"
 					/>
@@ -123,18 +136,18 @@
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, iusto?
 						</p>
 						<div class="project-button-container">
-							<button>GitHub</button>
-							<button>Demo</button>
+							<a href="https://github.com/andreiBarut/HangManWithCars" target="_blank">
+								<button>GitHub</button>
+							</a>
+							<a href="https://andreibarut.github.io/HangManWithCars/" target="_blank">
+								<button>GitHub</button>
+							</a>
 						</div>
 					</article>
 				</div>
 
 				<div class="project-ss">
-					<img
-						src="img/currency-app.png"
-						alt="#"
-						class="react-app-img project-img"
-					/>
+					<img src="img/logo-og.png" alt="#" class="react-app-img project-img" />
 					<article class="about-app">
 						<h2>OTHER REACT APP</h2>
 						<p>
