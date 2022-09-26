@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+	color: transparent;
+}
+
 .page {
 	background-color: #1b2430;
 	height: 100vh;
@@ -14,6 +19,7 @@
 .accent-font {
 	color: #f3c03d;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 /* ^ FIRST PAGE */
@@ -43,18 +49,82 @@ nav button {
 	font-family: "Advent Pro", sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
+	border: 0;
+}
+
+nav button:hover {
+	font-size: 1.5rem;
+	transition: 0.3s;
+	background-color: #1b2430;
+	cursor: pointer;
 }
 
 nav button:first-child {
 	color: #816797;
+	transform: rotate(2deg);
+	animation-name: rotate-1;
+	animation-duration: 0.6s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+nav button:first-child:hover {
+	color: white;
 }
 
 nav button:nth-child(2) {
 	color: #51557e;
+	transform: rotate(-3.5deg);
+	animation-name: rotate-2;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+nav button:nth-child(2):hover {
+	color: white;
 }
 
 nav button:nth-child(3) {
 	color: #f3c03d;
+	transform: rotate(-4.5deg);
+	animation-name: rotate-3;
+	animation-duration: 0.8s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+
+nav button:nth-child(3):hover {
+	color: white;
+}
+
+/* ^ nav buttons animation */
+
+@keyframes rotate-1 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
+}
+
+@keyframes rotate-2 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-2deg);
+	}
+}
+
+@keyframes rotate-3 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-2deg);
+	}
 }
 
 /* ^ info section on first page (about me) */
@@ -76,15 +146,23 @@ section {
 }
 
 .profile-pic-section {
-	width: 30vw;
-	border: 1px solid blue;
+	width: 350px;
+	height: 350px;
 	text-align: center;
+	border-radius: 50%;
+	border: 2px solid #fefefe;
+	overflow: hidden;
+	transition: 0.1s;
+}
+
+.profile-pic-section:hover {
+	border: 2px solid #f3c03d;
+	background-color: #51557e;
 }
 
 .profile-pic {
 	height: 40vh;
 	width: auto;
-	border: 2px solid #f3c03d;
 	filter: grayscale();
 }
 
@@ -92,14 +170,119 @@ section {
 	font-size: 2.5rem;
 }
 
-.fa-brands:first-child {
+.fa-brands:hover {
+	color: #fefefe;
+	transition: 0.2s;
+}
+
+.fa-square-github {
 	color: #816797;
 }
 
-.fa-brands:nth-child(2) {
+.fa-linkedin {
 	color: #51557e;
 }
 
-.fa-brands:nth-child(3) {
+.fa-square-facebook {
 	color: #f3c03d;
+}
+
+/* ^ SECOND PAGE */
+
+.skills-page {
+	border: 2px solid green;
+	background-color: #f3c03d;
+	display: flex;
+	justify-content: space-around;
+	z-index: -2;
+}
+
+/* ^ skills section */
+
+.skills-section {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+	width: 20vw;
+	background-color: #1b2430;
+	color: #fefefe;
+	font-size: 1.2rem;
+}
+
+.skills-section:hover {
+	color: #f3c03d;
+	transition: 0.5s;
+}
+
+.obj-image {
+	height: 15vh;
+
+	animation: move-obj 10s linear infinite;
+}
+
+.heading-2 {
+	color: #816797;
+	font-size: 2rem;
+}
+
+@keyframes move-obj {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* ^ description section */
+
+.description-section {
+	width: 25vw;
+	height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	color: #51557e;
+	font-size: 1.2rem;
+	color: #1b2430;
+	font-weight: 500;
+	overflow: hidden;
+}
+
+/* ^ plane and plane animation */
+
+.moving-plane {
+	position: relative;
+	animation-name: move-plane;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	top: 25px;
+	height: 10vh;
+	left: -100px;
+	display: block;
+}
+
+@keyframes move-plane {
+	0% {
+		left: 0;
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0.5;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 0.5;
+	}
+
+	100% {
+		left: 80vw;
+		opacity: 0;
+	}
 }
