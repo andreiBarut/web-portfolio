@@ -4,6 +4,10 @@
 	padding: 0;
 }
 
+body {
+	font-family: "Advent Pro", sans-serif;
+}
+
 a {
 	text-decoration: none;
 	color: transparent;
@@ -13,7 +17,6 @@ a {
 	background-color: #1b2430;
 	height: 100vh;
 	border: 2px solid black;
-	font-family: "Advent Pro", sans-serif;
 }
 
 .accent-font {
@@ -285,4 +288,24 @@ section {
 		left: 80vw;
 		opacity: 0;
 	}
+}
+
+/* ^ THIRD PAGE */
+
+.projects-page {
+	background-color: #1c1c1c;
+	height: auto !important;
+}
+
+.project-section {
+	display: flex;
+	flex-direction: column;
+	color: #ffffff;
+	margin: 0;
+}
+
+.project-section button {
+	width: 100px;
+	height: 30px;
+	background-color: #f3c03d;
 }
