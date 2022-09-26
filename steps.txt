@@ -1,0 +1,14 @@
+-add responsiveness for:
+-first page
+-second page
+-third page
+
+-remove borders
+
+-put images for all apps
+
+-make links work for everything
+
+-create bookmarks that slide 
+
+-make hamburger menu that occupies the whole page
