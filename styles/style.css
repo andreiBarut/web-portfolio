@@ -320,6 +320,7 @@ section {
 	text-align: center;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin: 68px;
 	font-size: 1.2rem;
 }
@@ -378,7 +379,21 @@ section {
 	padding: 2rem;
 }
 
+.hamburger-menu {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.fa-bars {
+	font-size: 2rem;
+	color: #f3c03d;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
+	nav {
+		display: none;
+	}
 	.page {
 		height: auto;
 	}
@@ -420,5 +435,42 @@ section {
 	}
 	.project-ss {
 		flex-direction: column;
+		/* justify-content: center; */
 	}
+	.about-app {
+		margin-bottom: 1rem;
+		margin-left: 0;
+	}
+	.hamburger-menu-items {
+		display: none;
+		justify-content: center;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.hamburger-menu {
+		display: none;
+	}
+	.hamburger-menu-items {
+		display: none;
+	}
+}
+
+.hamburger-menu-items button {
+	border: 0;
+	background-color: transparent;
+	color: #fefefe;
+	font-size: 1rem;
+	margin-top: 1rem;
+	font-family: "Advent Pro", sans-serif;
+	padding: 1rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.hamburger-menu-items button:hover {
+	background-color: #f3c03d;
+	color: #1b2430;
+	transition: 0.3s;
 }
