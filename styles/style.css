@@ -405,6 +405,9 @@ section {
 	.page {
 		height: auto;
 	}
+	.about-page {
+		background-image: none;
+	}
 	section {
 		display: flex;
 		justify-content: center;
