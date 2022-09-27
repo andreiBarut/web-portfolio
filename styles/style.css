@@ -419,6 +419,10 @@ section {
 	.about-container {
 		width: 80vw;
 	}
+	.delimitator-page {
+		background-image: none;
+		height: 30vh;
+	}
 	.skills-page {
 		display: flex;
 		justify-content: center;
