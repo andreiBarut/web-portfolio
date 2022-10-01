@@ -313,6 +313,8 @@ section {
 	padding: 0;
 	display: flex;
 	justify-content: center;
+	/* align-items: center; */
+	/* align-content: center; */
 	flex-direction: column;
 	height: auto;
 	width: auto;
@@ -341,15 +343,16 @@ section {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	align-self: center;
+
 	align-content: flex-end;
 	padding: 1rem;
 	width: 30vw;
 }
 
 .project-img {
+	width: 20vw;
 	border-radius: 10px;
-	height: 403px;
-	width: 290px;
 }
 
 .currency-app-img {
@@ -461,6 +464,12 @@ section {
 		display: none;
 		justify-content: center;
 		flex-direction: column;
+	}
+	.project-img {
+		width: 60vw;
+	}
+	.about-app {
+		width: 60vw;
 	}
 }
 
